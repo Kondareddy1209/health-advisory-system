@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from src.anomaly_detection import detect_anomalies
 
 # Load the dataset from GitHub raw file URL
-file_path = 'https://raw.githubusercontent.com/Kondareddy1209/health-advisory-system/main/health_fitness_dataset.csv'
+file_path = r'https://github.com/Kondareddy1209/health-advisory-system/blob/main/health_fitness_dataset.csv'
 data = pd.read_csv(file_path)
 
 # Streamlit Sidebar for Filters

@@ -3,17 +3,15 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import time
 from src.anomaly_detection import detect_anomalies
-from src.parallel_processing import process_row
 
 # Load the dataset
 file_path = 'https://raw.githubusercontent.com/Kondareddy1209/health-advisory-system/main/health_fitness_dataset.csv'
 data = pd.read_csv(file_path)
 
-# Basic information
+# Display Dataset Overview
 print("Dataset Overview:")
 print(data.info())
-print("\nFirst Few Rows:")
-print(data.head())
+print("\nAvailable Columns:", list(data.columns))
 
 # Subset for faster processing
 subset_data = data.sample(n=1000, random_state=42)

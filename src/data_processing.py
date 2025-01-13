@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 def clean_data(data):
     data = data.drop_duplicates()
-    data = data.ffill()
+    data = data.ffill()  # Forward fill missing values
     return data
 
 def visualize_data(data):
